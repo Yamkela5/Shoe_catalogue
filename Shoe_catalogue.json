@@ -1,0 +1,65 @@
+var shoes = [
+        {
+            Color : 'blue',
+            Price : 350,
+            In_stock : 5,
+            Size : 5,
+            Brand : 'Nike'
+
+
+        },
+
+
+
+        {
+            Color : 'black',
+            Price : 275,
+            In_stock : 3,
+            Size : 7,
+            Brand : 'Adidas'
+
+
+        },
+        {
+            Color : 'Navy',
+            Price : 275,
+            In_stock : 3,
+            Size : 3,
+            Brand : 'Sissy Boy'
+
+},
+{
+    Color : 'White',
+    Price : 1275,
+    In_stock : 12,
+    Size : 7,
+    Brand : 'Batman'
+
+},
+{
+    Color : 'Pink',
+    Price : 905,
+    In_stock : 12,
+    Size : 7,
+    Brand : 'Timberland'
+
+},
+
+{
+    Color : 'Grey',
+    Price : 2905,
+    In_stock : 12,
+    Size : 6,
+    Brand : 'Asics'
+
+
+},
+{
+    Color : 'White',
+    Price : 805,
+    In_stock : 12,
+    Size : 7,
+    Brand : 'Vans'
+
+},
+]

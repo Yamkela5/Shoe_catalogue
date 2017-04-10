@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Shoe_catalogue.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js" charset="utf-8"></script>
+<script src="Shoe_catalogue.json" charset="utf-8"></script>
+
+
+
+    <meta charset="utf-8">
+    <title>Shoe Catalogue</title>
+    <style>
+       table, th, td
+       {
+           margin:10px 0;
+           border:solid 2px rosybrown;
+           padding:10px 30px;
+           font:15px Verdana;
+           width: 100px
+           height: 20px
+       }
+       th {
+           font-weight:bold;
+       }
+   </style>
+  </head>
+  <body>
+
+    <center><h1>Shoe Catalogue</h1><center>
+      <script id="template" type="text/x-handlebars-template">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Color :</th>
+                    <th>Size :</th>
+                    <th>Price :</th>
+                    <th>Brand :</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each shoe}}
+                <tr>
+                    <td>{{Color }}</td>
+                    <td> {{Size }}</td>
+                    <td>{{ Price }}</td>
+                </tr>
+                {{/each}}
+                </tbody>
+                </table>
+</script>
+
+                <select id="select" name="select">
+                    <option selected="selected" value="Size">Size</option>
+                    <option value="size">3</option>
+                    <option value="size">4</option>
+                    <option value="size">5</option>
+                    <option value="size">6</option>
+                </select>
+                <select id="select" name="select">
+                    <option selected="selected" value="Color">Color</option>
+                    <option value="color">Black</option>
+                    <option value="color">Blue</option>
+                    <option value="color">Navy</option>
+                    <option value="color">Grey</option>
+                </select>
+                <select id="select" name="select">
+                    <option selected="selected" value="Brand">Brand</option>
+                    <option value="color">Nike</option>
+                    <option value="color">Adidas</option>
+                    <option value="color">All Star</option>
+                    <option value="color">Sissy Boy</option>
+                </select>
+
+  <input type="button" onclick="Table()" value="Search" />
+      <div id="showData"></div>
+
+
+<script src="Shoe_catalogue.js" charset="utf-8"></script>
+  </body>
+
+</html>
