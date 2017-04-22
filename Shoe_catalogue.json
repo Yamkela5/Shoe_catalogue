@@ -1,10 +1,12 @@
 var shoes = [
         {
-            Color : 'blue',
-            Price : 350,
-            In_stock : 5,
+            Color : 'black',
+            Price : 1350,
+            Instock : 15,
             Size : 5,
-            Brand : 'Nike'
+            Brand : 'Nike',
+            Image : 'nike black.jpg'
+
 
 
         },
@@ -12,9 +14,9 @@ var shoes = [
 
 
         {
-            Color : 'black',
+            Color : 'white',
             Price : 275,
-            In_stock : 3,
+            Instock : 3,
             Size : 7,
             Brand : 'Adidas'
 
@@ -23,7 +25,7 @@ var shoes = [
         {
             Color : 'Navy',
             Price : 275,
-            In_stock : 3,
+            Instock : 3,
             Size : 3,
             Brand : 'Sissy Boy'
 
@@ -31,7 +33,7 @@ var shoes = [
 {
     Color : 'White',
     Price : 1275,
-    In_stock : 12,
+    Instock : 12,
     Size : 7,
     Brand : 'Batman'
 
@@ -39,7 +41,7 @@ var shoes = [
 {
     Color : 'Pink',
     Price : 905,
-    In_stock : 12,
+    Instock : 12,
     Size : 7,
     Brand : 'Timberland'
 
@@ -48,7 +50,7 @@ var shoes = [
 {
     Color : 'Grey',
     Price : 2905,
-    In_stock : 12,
+    Instock : 12,
     Size : 6,
     Brand : 'Asics'
 
@@ -57,7 +59,7 @@ var shoes = [
 {
     Color : 'White',
     Price : 805,
-    In_stock : 12,
+    Instock : 12,
     Size : 7,
     Brand : 'Vans'
 

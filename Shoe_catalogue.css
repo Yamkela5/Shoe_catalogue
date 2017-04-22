@@ -1,9 +1,14 @@
 body {
     font:15px arial,sans-serif;
-    background-image: url('http://www.airjordan6.co.uk/images/jordan/Cheap%20Price%20Air%20Jordan%204%20Fluorescent%20Low%20Black%20Blue-aj0100248_1.jpg');
+    background-image: url('https://s-media-cache-ak0.pinimg.com/736x/7a/42/44/7a4244421ecf0260f561ea29c75d8632.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: auto;
+}
+
+}
+table , th, tr , td{
+  border: 1px solid black;
 }
 
 h1 {
