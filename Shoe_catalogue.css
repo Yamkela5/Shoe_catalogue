@@ -1,39 +1,63 @@
-body {
-    font:15px arial,sans-serif;
-    background-image: url('https://s-media-cache-ak0.pinimg.com/736x/7a/42/44/7a4244421ecf0260f561ea29c75d8632.jpg');
-    background-repeat: no-repeat;
+  body {
+    font-style: italic;
+    background-image: url('http://www.fashioncaper.com/wp-content/uploads/2016/03/light-pink-shoes-for-wedding-4-592-846lightpinkivoryitaliansilkruffle.jpg');
+    background-repeat: repeat;
     background-position: top;
     background-size: auto;
+    font-family: monospace;
 }
 
 }
 table , th, tr , td{
-  border: 1px solid black;
+  border: 10px solid black;
 }
 
 h1 {
     margin: 0 0 10px 0;
     padding: 5px;
     font-size: 54px;
-    background-color: #999;
+    background-color: lightblue;
     color: #fff;
 }
 table {
     margin: 110px;
 }
 th, td {
-    padding: 5px;
-    border: 1px solid #999;
+    padding: 0px;
+    border: 5px solid lightblue;
+    border-radius: 2px;
+    height: 2px;
+    width:12px
+
   }
-
-
+  select > option {
+    background: lightblue;
+  }
 select {
-  width: 125px
-  height:46px
-  margin:auto;
-  padding-left: 24px
+  border-radius: 10px;
+  height: 50px;
+  background-color: lightpink;
+  float: left;
+
 }
-button{
-  width:30px
-  height:25px
+#addBtn {
+  border-radius: 10px;
+  height: 50px;
+  background-color: lightpink;
+  float: left;
+}
+button {
+  border-radius: 10px;
+  height: 50px;
+  background-color: lightpink;
+  float: left;
+
+}
+
+.selectWrapper{
+  border-radius:36px;
+  display:inline-block;
+  overflow:hidden;
+  background:#cccccc;
+  border:1px solid #cccccc;
 }

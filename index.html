@@ -1,68 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <head>
-<link rel="stylesheet" href="Shoe_catalogue.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js" charset="utf-8"></script>
-<script src="Shoe_catalogue.json" charset="utf-8"></script>
-    <meta charset="utf-8">
-    <title>Shoe Catalogue</title>
+
+
+
+    <head>
+        <title>Shoe_Catalogue </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+        <link rel="stylesheet" href="Shoe_catalogue.css" type="text/css">
     </head>
+
     <body>
-      <center><h1>Shoe Catalogue</h1><center>
-  <script id="template" type="text/x-handlebars-template">
+        <center><h1>Shoe Catalogue</h1></center>
+        <br>
+        <br>
+        <br>
+        <script id="tableTemplate" type="text/x-handlebars-template">
+            {{#each shoes}}
+            <tr>
+                <td>{{color}}</td>
+                <td>{{size}}</td>
+                <td>{{brand}}</td>
+                <td>R{{price}}.</td>
+                <td>{{instock}}</td>
 
-    {{#each shoe}}
-    <ul>
-      <li>Brand: {{Brand}}</li>
-      <li>color: {{Color}}</li>
-      <li>price:R {{Price}}.00</li>
-      <li>in_stock: {{Instock}}</li>
-      <li>size: {{size}} </li>
-    </ul>
-    {{/each}}
-  </script>
-            <script id="template3" type="text/x-handlebars-template">
-              <select id="select" name="select">
-                <option selected disabled>Color</option>
-              {{#each shoeData}}
-          <option value="{{Color}}">{{Color}}</option>
-                    {{/each}}
-                  </select>
-                  </script>
-
-                <script id="template2" type="text/x-handlebars-template">
-                <select id="select" name="select">
-                    <option selected disabled>Size</option>
-                    {{#each shoeData}}
-                    <option value="{{Size}}">{{Size}}</option>
-                    {{/each}}
-                  </select>
-                  </script>
+            </tr>
+            {{/each}}
+        </script>
 
 
-                    <script id="template1" type="text/x-handlebars-template">
-                      <select id="select" name="select">
-                        <option selected="selected" value="Brand">Brand</option>
-                    {{#each shoeData}}
-                    <option value='{{Brand}}'>{{Brand}}</option>
-                    {{/each}}
-                  </select>
-                  </script>
-<div class="drpDown">
-  <div class="color">
+        <script id="dropTemp" type="text/x-handlebars-template">
+          <select id="colorDrpDwn">
+            <option selected="false" disabled="disabled">select color</option>
+              {{#each colors}}
+                <option value="{{this}}">{{this}}</option>
+              {{/each}}
+            </select>
 
-  </div>
-  <div class="size">
+            <select id="sizeDrpDwn">
+              <option selected="true" disabled="disabled">select size</option>
+              {{#each sizes}}
+              <option value="{{this}}">{{this}}</option>
+              {{/each}}
+            </select>
 
-  </div>
-  <div class="brand">
-  </div>
-</div>
+            <select id="brandDrpDwn">
+              <option selected="true" disabled="disabled">select brand</option>
+              {{#each brands}}
+              <option value="{{this}}" >{{this}}</option>
+              {{/each}}
+            </select>
 
-  <button type="button" name="button" id= 'button'>Search</button>
-<div class="shoWdata"></div>
-<script src="Shoe_catalogue.js" charset="utf-8"></script>
 
+        </script>
+
+        <button type="button" name="searchButton" id="search">All Shoes</button>
+        <div id="Output">
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <h2>Add new Stock</h2>
+        <br>
+        <br>
+        color:</center> <input type="text" id="new_color"> <br><br>
+        size: <input type="number" id="new_size">
+        <br>
+        <br>
+        brand: <input type="text" id="new_brand"><br><br>
+        <br>
+        instock: <input type="number" id="new_stock"><br><br>
+        price: <input type="text" id="new_price"><br><br>
+
+        <input type="button" id="addBtn" value="Add Stock">
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th>color</th>
+                    <th>size</th>
+                    <th>brand</th>
+                    <th>price</th>
+                    <th>instock</th>
+
+                </tr>
+            </thead>
+            <tbody id="tableDisplay">
+
+            </tbody>
+        </table>
 
     </body>
-    </html>
+    <script type="text/javascript" src="Shoe_catalogue.js"></script>
+
+</html>
